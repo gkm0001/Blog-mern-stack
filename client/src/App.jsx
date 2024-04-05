@@ -5,18 +5,20 @@ import About from './pages/About'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
-import Projects from './pages/Projects'
+import Project from './pages/Project'
+import Header from './components/Header'
  
  function App() {
    return (
       <BrowserRouter>
+           <Header/>
           <Routes>
               <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/> 
                 <Route path='/sign-in' element={<Signin/>}/>
                 <Route path='/sign-up' element={<Signup/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
-                <Route  path='/project' element={<Projects/>}/>
+                <Route  path='/project' element={<Project/>}/>
                
           </Routes>
       </BrowserRouter>
